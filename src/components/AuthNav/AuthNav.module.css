@@ -1,0 +1,13 @@
+.authNavContainer {
+  font-size: 28px;
+  font-weight: 600;
+  font-style: inherit;
+  display: flex;
+  gap: 20px;
+  font-style: inherit;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}

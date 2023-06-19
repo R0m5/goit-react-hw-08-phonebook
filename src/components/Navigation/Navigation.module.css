@@ -1,0 +1,12 @@
+.link {
+  font-size: 24px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 900;
+}
+
+.navigationContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
