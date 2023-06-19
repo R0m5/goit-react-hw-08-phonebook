@@ -8,13 +8,13 @@ export default function UserMenu() {
   const { user } = useAuth();
   return (
     <div className={css.userMenuContainer}>
-      <p className={css.userName}>{user.name}</p>
+      <p className={css.userName}>Hello, {user.name}</p>
       <button
         className={css.logOutBtn}
         type="button"
         onClick={() => dispatch(logOut())}
       >
-        Logout
+        Log out
       </button>
     </div>
   );

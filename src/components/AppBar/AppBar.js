@@ -12,6 +12,7 @@ export default function AppBar() {
         display: 'flex',
         justifyContent: 'space-around',
         padding: '20px',
+        borderBottom: '2px solid black',
       }}
     >
       <Navigation />

@@ -19,6 +19,11 @@ export default function Contacts() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'start',
+        margin: '20px auto',
+        width: '480px',
+        backgroundColor: 'rgb(187, 187, 187)',
+        borderRadius: '10px',
+        padding: ' 40px 20px',
       }}
     >
       <ContactForm />

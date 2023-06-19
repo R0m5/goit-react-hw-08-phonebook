@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { logIn } from 'redux/auth/authOperations';
+import { FiEye, FiEyeOff } from 'react-icons/fi';
 import css from './LoginForm.module.css';
 
 export const LoginForm = () => {
@@ -42,7 +43,7 @@ export const LoginForm = () => {
             onClick={handleTogglePassword}
             tabIndex="-1"
           >
-            {showPassword ? 'Hide' : 'Show'}
+            {showPassword ? <FiEye /> : <FiEyeOff />}
           </button>
         </div>
       </label>

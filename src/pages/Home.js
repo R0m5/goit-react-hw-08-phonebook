@@ -5,7 +5,7 @@ export default function Home() {
         style={{
           textAlign: 'center',
           fontSize: '36px',
-          marginTop: '30px',
+          marginTop: '200px',
           width: '350px',
           marginLeft: 'auto',
           marginRight: 'auto',

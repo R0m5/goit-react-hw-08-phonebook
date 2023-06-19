@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/authOperations';
 import css from './RegisterForm.module.css';
+import { FiEye, FiEyeOff } from 'react-icons/fi';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -48,7 +49,7 @@ export const RegisterForm = () => {
             onClick={handleTogglePassword}
             tabIndex="-1"
           >
-            {showPassword ? 'Hide' : 'Show'}
+            {showPassword ? <FiEye /> : <FiEyeOff />}
           </button>
         </div>
       </label>
@@ -58,18 +59,3 @@ export const RegisterForm = () => {
     </form>
   );
 };
-
-// {
-//   showPassword ? (
-//   <svg width="40" height="40" aria-label="Перемикач">
-//     <use class="icon-eye" href="./icons/symbols.svg#icon-eye"></use>
-//   </svg>
-// ) : (
-//   <svg width="40" height="40" aria-label="Перемикач">
-//     <use
-//       class="icon-eye-blocked"
-//       href="./icons/symbols.svg#icon-eye-blocked"
-//     ></use>
-//   </svg>
-//   );
-// }
